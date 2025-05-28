@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* Анимированный фон */
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Логотип */
+  #logo {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff;
+  }
+  
+  /* Контейнер */
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  /* Поле ввода и кнопки */
+  input, button {
+    margin: 10px 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+  }
+  
+  input {
+    width: 60%;
+    max-width: 300px;
+  }
+  
+  button {
+    background-color: #00ffff;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+  }
+  
+  button:hover {
+    background-color: #008b8b;
+    color: white;
+  }
+  
+  /* Блок с цитатой */
+  #quote {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    font-size: 24px;
+    font-style: italic;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  /* Анимация появления */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Сохранённые цитаты */
+  #favorites {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+  }
+  
+  #favoritesList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #favoritesList li {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+  } 
+
+  #languageSwitcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  #languageSwitcher img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  
+  #languageSwitcher img:hover {
+    transform: scale(1.1);
+    border-color: #00ffff;
+  }
+  
